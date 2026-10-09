@@ -2,8 +2,7 @@
 
 > **Note:** this public copy ships **without the copyrighted graphic assets** (`src/main/resources/img/` — card art, backgrounds, icons) for copyright reasons. The GUI start screen opens, and **music + emoji are kept** in the built app, but only the **TUI is fully playable**.
 
-<img width="592" height="420" alt="image" src="https://github.com/user-attachments/assets/40f69c4a-c8de-4cf4-92fd-2467130b80c9" />
-
+<img width="1184" height="840" alt="image" src="https://github.com/user-attachments/assets/c87bb6f7-dc3b-473a-9443-c81d92145edb" />
 
 **Course:** Software Engineering Project A.Y. 2025-2026  
 **Project:** PSP2 - MESOS
