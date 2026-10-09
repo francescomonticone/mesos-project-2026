@@ -1,0 +1,64 @@
+[
+  {
+    "tileId": "A",
+    "minPlayers":  5,
+    "tileMode": {
+      "type":"FoodGain",
+      "food": 3
+    }
+  },
+  {
+    "tileId": "B",
+    "minPlayers": 2,
+    "tileMode": {
+      "type": "CardPick",
+      "upperRowCount": 0,
+      "lowerRowCount": 1
+    }
+  },
+  {
+    "tileId": "C",
+    "minPlayers": 2,
+    "tileMode": {
+      "type": "CardPick",
+      "upperRowCount": 1,
+      "lowerRowCount": 0
+    }
+  },
+  {
+    "tileId": "D",
+    "minPlayers": 3,
+    "tileMode": {
+      "type": "CardPick",
+      "upperRowCount": 0,
+      "lowerRowCount": 2
+    }
+  },
+  {
+    "tileId": "E",
+    "minPlayers": 2,
+    "tileMode": {
+      "type": "CardPick",
+      "upperRowCount": 1,
+      "lowerRowCount": 1
+    }
+  },
+  {
+    "tileId": "F",
+    "minPlayers": 2,
+    "tileMode": {
+      "type": "CardPick",
+      "upperRowCount": 2,
+      "lowerRowCount": 0
+    }
+  },
+  {
+    "tileId": "G",
+    "minPlayers": 4,
+    "tileMode": {
+      "type": "CardPick",
+      "upperRowCount": 2,
+      "lowerRowCount": 1
+    }
+  }
+]

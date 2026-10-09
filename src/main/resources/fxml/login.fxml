@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox alignment="CENTER" spacing="15"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.polimi.ingsw.Client.View.GUI.LoginController"
+      stylesheets="@/style.css">
+
+    <Button fx:id="muteButton" onAction="#onMuteClicked"
+            style="-fx-background-color: transparent; -fx-font-size: 20px; -fx-cursor: hand;" />
+
+    <padding><Insets topRightBottomLeft="40"/></padding>
+
+    <Label text="Please log in to your account"
+           style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #28251d;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Nickname:" style="-fx-min-width: 80;"/>
+        <TextField fx:id="nicknameField" prefWidth="220"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Password:" style="-fx-min-width: 80;"/>
+        <PasswordField fx:id="passwordField" prefWidth="220"/>
+    </HBox>
+
+    <Label fx:id="feedbackLabel"
+           style="-fx-font-size: 12; -fx-text-fill: gray;"/>
+
+    <Button fx:id="loginButton"
+            text="Login"
+            onAction="#onLoginClicked"
+            prefWidth="200"
+            style="-fx-background-color: #501d0c; -fx-text-fill: white;
+                   -fx-font-size: 14; -fx-background-radius: 6; -fx-cursor: hand;"/>
+</VBox>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ComboBox?>
+
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="it.polimi.ingsw.Client.View.GUI.GameController"
+           style="-fx-background-color: #28251d;"
+           stylesheets="@/style.css">
+
+    <Region maxWidth="Infinity" maxHeight="Infinity"
+            style="-fx-background-image: url('/img/mesos_background.png');
+                   -fx-background-size: 100% 100%;
+                    -fx-background-position: center center;
+                   -fx-background-repeat: no-repeat;
+                   -fx-background-blend-mode: darken;
+                   -fx-opacity: 0.9;"/>
+
+    <BorderPane fx:id="gameRoot" style="-fx-background-color: transparent;">
+
+        <top>
+            <HBox style="-fx-background-color: rgb(255,255,255); -fx-padding: 10 14 10 14;">
+                <Label fx:id="feedbackLabel"
+                       text=""
+                       wrapText="true"
+                       maxWidth="1.7976931348623157E308"
+                       style="-fx-font-size: 12; -fx-text-fill: #ffffff;"> <HBox.hgrow>
+                    <Priority fx:value="ALWAYS"/>
+                </HBox.hgrow>
+                </Label>
+            </HBox>
+        </top>
+
+        <left>
+            <ScrollPane fitToWidth="true"
+                        prefWidth="220"
+                        style="-fx-background-color: transparent; -fx-background: transparent; -fx-border-color: transparent;">
+                <content>
+                    <VBox fx:id="playersBox" spacing="8" style="-fx-background-color: transparent;">
+                        <padding>
+                            <Insets top="10" right="10" bottom="10" left="10"/>
+                        </padding>
+                    </VBox>
+                </content>
+            </ScrollPane>
+        </left>
+
+        <center>
+            <VBox spacing="12" style="-fx-padding: 14; -fx-background-color: transparent;">
+
+                <HBox fx:id="disconnectionPanel" spacing="10" alignment="CENTER"
+                      visible="false" managed="false"
+                      style="-fx-background-color: #ffe5c3; -fx-border-color: #d5963f; -fx-padding: 8; -fx-border-radius: 6; -fx-background-radius: 6;">
+                    <Label text="You are the only player left in the game. Waiting for reconnection: "
+                           style="-fx-font-size: 12; -fx-text-fill: #141a7c; -fx-font-weight: bold;"/>
+                    <ProgressBar fx:id="timerProgressBar" progress="1.0" prefWidth="150"/>
+                </HBox>
+
+                <ScrollPane fitToHeight="true"
+                            fitToWidth="false"
+                            hbarPolicy="AS_NEEDED"
+                            vbarPolicy="NEVER"
+                            pannable="true"
+                            style="-fx-background-color: transparent; -fx-background: transparent; -fx-border-color: transparent;">
+                    <content>
+                        <HBox fx:id="upperRowBox" spacing="8" alignment="CENTER_LEFT" style="-fx-background-color: transparent;"/>
+                    </content>
+                </ScrollPane>
+
+                <Separator style="-fx-opacity: 0.3;"/> <HBox spacing="16" alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                <VBox spacing="6" alignment="TOP_CENTER" style="-fx-background-color: transparent;">
+                    <VBox fx:id="turnOrderBox"
+                          spacing="6"
+                          prefWidth="120"
+                          style="-fx-background-color: #f9f8f5;
+                                     -fx-border-color: #dcd9d5;
+                                     -fx-border-radius: 6;
+                                     -fx-background-radius: 6;
+                                     -fx-padding: 8;"/>
+                </VBox>
+
+                <VBox spacing="6" alignment="CENTER_LEFT" style="-fx-background-color: transparent;">
+                    <ScrollPane fitToHeight="true"
+                                fitToWidth="false"
+                                hbarPolicy="AS_NEEDED"
+                                vbarPolicy="NEVER"
+                                pannable="true"
+                                style="-fx-background-color: transparent; -fx-background: transparent; -fx-border-color: transparent;">
+                        <content>
+                            <HBox fx:id="offerTrackBox" spacing="10" alignment="CENTER_LEFT" style="-fx-background-color: transparent;"/>
+                        </content>
+                    </ScrollPane>
+                </VBox>
+            </HBox>
+
+                <Separator style="-fx-opacity: 0.3;"/>
+
+                <ScrollPane fitToHeight="true"
+                            fitToWidth="false"
+                            hbarPolicy="AS_NEEDED"
+                            vbarPolicy="NEVER"
+                            pannable="true"
+                            style="-fx-background-color: transparent; -fx-background: transparent; -fx-border-color: transparent;">
+                    <content>
+                        <HBox fx:id="lowerRowBox" spacing="8" alignment="CENTER_LEFT" style="-fx-background-color: transparent;"/>
+                    </content>
+                </ScrollPane>
+
+                <VBox fx:id="placeTotemPanel" spacing="6" visible="false" managed="false"
+                      style="-fx-background-color: #ffffff; -fx-background-radius: 6; -fx-padding: 10;">
+                    <Label text="Place your totem on a tile above"
+                           style="-fx-font-size: 12; -fx-text-fill: #501d0c; -fx-font-weight: bold;"/>
+                </VBox>
+
+                <VBox fx:id="pickCardPanel" spacing="6" visible="false" managed="false"
+                      style="-fx-background-color: #ffffff; -fx-background-radius: 6; -fx-padding: 10;">
+                    <Label text="Click cards above to build your ordered selection"
+                           style="-fx-font-size: 12; -fx-text-fill: #501d0c; -fx-font-weight: bold;"/>
+                    <Button fx:id="confirmPickButton"
+                            text="Confirm selection"
+                            onAction="#onConfirmResolveClicked"
+                            style="-fx-background-color: #501d0c;
+                                -fx-text-fill: white;
+                                -fx-background-radius: 4;
+                                -fx-cursor: hand;"/>
+                </VBox>
+
+                <HBox fx:id="resolveOfferPanel"
+                      spacing="8"
+                      visible="false"
+                      managed="false"
+                      alignment="CENTER_LEFT"
+                      style="-fx-background-color: #ffffff;
+                            -fx-border-color: #dcd9d5;
+                            -fx-border-radius: 6;
+                            -fx-background-radius: 6;
+                            -fx-padding: 10;">
+                    <Label text="Click cards to select or deselect them. Selection order follows click order."
+                           style="-fx-font-size: 12; -fx-text-fill: #501d0c; -fx-font-weight: bold;"/>
+                    <Button fx:id="confirmResolveButton"
+                            text="Confirm selection"
+                            onAction="#onConfirmResolveClicked"
+                            style="-fx-background-color: #501d0c;
+                                -fx-text-fill: white;
+                                -fx-background-radius: 4;
+                                -fx-cursor: hand;"/>
+
+                    <Button fx:id="skipButton"
+                            text="Skip"
+                            onAction="#onSkipButtonClicked"
+                            style="-fx-background-color: #501d0c;
+                                -fx-text-fill: white;
+                                -fx-background-radius: 4;
+                                -fx-cursor: hand;"/>
+                </HBox>
+
+                <HBox fx:id="skipExtraPanel" spacing="6" visible="false" managed="false"
+                      style="-fx-background-color: #ffffff; -fx-background-radius: 6; -fx-padding: 10;">
+                    <Label text="You can take an extra card or skip"
+                           style="-fx-font-size: 12; -fx-text-fill: #501d0c; -fx-font-weight: bold;"/>
+                    <Button text="Skip extra card"
+                            onAction="#onSkipExtraClicked"
+                            style="-fx-background-color: #501d0c;
+                                   -fx-text-fill: white;
+                                   -fx-background-radius: 4;
+                                   -fx-cursor: hand;"/>
+                </HBox>
+
+                <VBox fx:id="waitingPanel" spacing="6" visible="false" managed="false"
+                      style="-fx-background-color: #ffffff; -fx-background-radius: 6; -fx-padding: 10;">
+                    <Label text="Waiting for other players..."
+                           style="-fx-font-size: 12; -fx-text-fill: #7a7974;"/>
+                </VBox>
+
+                <HBox.hgrow>
+                    <Priority fx:value="ALWAYS"/>
+                </HBox.hgrow>
+
+            </VBox>
+        </center>
+        <bottom>
+            <HBox alignment="CENTER_RIGHT" spacing="40">
+                <Label fx:id="eraLabel"
+                       alignment="BOTTOM_CENTER"
+                       minWidth="170"
+                       minHeight="90"
+                       style="-fx-font-size: 25;
+                            -fx-text-fill: #d68b21;
+                            -fx-font-weight: bold;
+                            -fx-background-image: url('img/era.png');
+                            -fx-background-size: cover;
+                            -fx-padding: 0 0 20 0;
+                            "/>
+
+                <Label fx:id="roundLabel"
+                       alignment="BOTTOM_CENTER"
+                       minWidth="170"
+                       minHeight="90"
+                       style="-fx-font-size: 25;
+                            -fx-text-fill: #d68b21;
+                            -fx-font-weight: bold;
+                            -fx-background-image: url('img/round.png');
+                            -fx-background-size: cover;
+                            -fx-padding: 0 0 20 0;
+                            "/>
+
+                <Label fx:id="phaseLabel"
+                       alignment="BOTTOM_CENTER"
+                       minWidth="170"
+                       minHeight="90"
+                       style="-fx-font-size: 16;
+                            -fx-text-fill: #d68b21;
+                            -fx-font-weight: bold;
+                            -fx-background-image: url('img/phase.png');
+                            -fx-background-size: cover;
+                            -fx-padding: 0 0 20 0;
+                            "/>
+
+                <Label fx:id="currentPlayerLabel"
+                       alignment="BOTTOM_LEFT"
+                       minWidth="250"
+                       minHeight="90"
+                       style="-fx-font-size: 30;
+                        -fx-text-fill: #ffffff;
+                        -fx-font-weight: bold;
+                        -fx-background-image: url('img/nickname.png');
+                        -fx-background-size: cover;
+                        -fx-padding: 0 0 20 80;
+                        "/>
+            </HBox>
+        </bottom>
+    </BorderPane>
+
+    <AnchorPane pickOnBounds="false">
+
+        <HBox fx:id="drawerContainer" alignment="CENTER_RIGHT"
+              AnchorPane.rightAnchor="-220.0"
+              AnchorPane.topAnchor="350.0"
+              pickOnBounds="false">
+
+            <Button fx:id="drawerToggleButton" text="◀ Tribe Stats" onAction="#toggleDrawer"
+                    style="-fx-background-color: #501d0c; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16; -fx-background-radius: 8 0 0 8; -fx-padding: 15 5 15 10; -fx-cursor: hand;"/>
+
+            <VBox fx:id="tribeDrawer" prefWidth="220" spacing="12"
+                  style="-fx-background-color: rgba(249, 248, 245, 0.95); -fx-border-color: #501d0c; -fx-border-width: 2 0 2 2; -fx-border-radius: 12 0 0 12; -fx-background-radius: 12 0 0 12; -fx-padding: 15;">
+                <Label text="TRIBE STATS" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #501d0c;"/>
+
+                <ComboBox fx:id="playerSelector" maxWidth="Infinity" onAction="#onPlayerSelected"
+                          style="-fx-background-color: #d6bb95; -fx-text-fill: #501d0c; -fx-font-weight: bold; -fx-cursor: hand;"/>
+
+                <Separator/>
+                <Label fx:id="drawerShamanStars" text="⭐ Stars: 0" style="-fx-font-size: 18; -fx-text-fill: #000000; -fx-font-weight: bold;"/>
+                <Label fx:id="drawerFoodDiscount" text="🍖 Food Disc: 0" style="-fx-font-size: 16; -fx-text-fill: #000000;"/>
+                <Label fx:id="drawerBuildDiscount" text="🔨 Build Disc: 0" style="-fx-font-size: 16; -fx-text-fill: #000000;"/>
+                <Label fx:id="drawerDistinctInv" text="💡 Distinct Inv: 0" style="-fx-font-size: 16; -fx-text-fill: #000000;"/>
+                <Label fx:id="drawerInvPairs" text="🔗 Inv Pairs: 0" style="-fx-font-size: 16; -fx-text-fill: #000000;"/>
+            </VBox>
+
+        </HBox>
+    </AnchorPane>
+
+    <Button fx:id="muteButton" onAction="#onMuteClicked"
+            StackPane.alignment="TOP_RIGHT"
+            style="-fx-background-color: transparent; -fx-font-size: 20px; -fx-cursor: hand;">
+        <StackPane.margin>
+            <Insets top="1" right="1"/> </StackPane.margin>
+    </Button>
+</StackPane>

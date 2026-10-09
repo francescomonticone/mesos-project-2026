@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="12"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.polimi.ingsw.Client.View.GUI.LobbyController"
+      style="-fx-background-color: #f7f6f2;"
+      stylesheets="@/style.css">
+
+    <Button fx:id="muteButton" onAction="#onMuteClicked"
+            style="-fx-background-color: transparent; -fx-font-size: 20px; -fx-cursor: hand;" />
+
+    <padding><Insets topRightBottomLeft="20"/></padding>
+
+    <!-- Header -->
+    <HBox alignment="CENTER_LEFT" spacing="12">
+        <Label text="MESOS — Lobby Browser"
+               style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #28251d;"/>
+        <Label fx:id="playerLabel" text=""
+               style="-fx-font-size: 12; -fx-text-fill: #7a7974;"/>
+    </HBox>
+
+    <!-- Lobby list -->
+    <ScrollPane fitToWidth="true" prefHeight="320"
+                style="-fx-background-color: transparent; -fx-border-color: #dcd9d5; -fx-border-radius: 6;">
+        <VBox fx:id="lobbyListBox" spacing="8">
+            <padding><Insets topRightBottomLeft="8"/></padding>
+        </VBox>
+    </ScrollPane>
+
+    <!-- Feedback -->
+    <Label fx:id="feedbackLabel" text=""
+           style="-fx-font-size: 12; -fx-text-fill: gray;"/>
+
+    <!-- Refresh -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button fx:id="refreshButton"
+                text="⟳ Refresh"
+                onAction="#onRefreshClicked"
+                style="-fx-background-color: #f9f8f5; -fx-text-fill: #501d0c;
+                       -fx-border-color: #501d0c; -fx-border-radius: 4;
+                       -fx-background-radius: 4; -fx-cursor: hand;"/>
+    </HBox>
+
+    <!-- Create lobby -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Create lobby — players:"/>
+        <Spinner fx:id="sizeSpinner" prefWidth="70"/>
+        <Button fx:id="createButton"
+                text="Create"
+                onAction="#onCreateLobbyClicked"
+                style="-fx-background-color: #501d0c; -fx-text-fill: white;
+                       -fx-background-radius: 4; -fx-cursor: hand;"/>
+    </HBox>
+
+    <!-- Join lobby -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Join lobby by ID:"/>
+        <TextField fx:id="joinIdField" prefWidth="80" promptText="e.g. 1001"/>
+        <Button fx:id="joinButton"
+                text="Join"
+                onAction="#onJoinLobbyClicked"
+                style="-fx-background-color: #501d0c; -fx-text-fill: white;
+                       -fx-background-radius: 4; -fx-cursor: hand;"/>
+    </HBox>
+</VBox>

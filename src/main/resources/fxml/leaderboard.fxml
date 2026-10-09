@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.polimi.ingsw.Client.View.GUI.LeaderboardController"
+            style="-fx-background-color: #d6bb95;"
+            stylesheets="@/style.css">
+
+    <!-- Top Header: Title Banner -->
+    <top>
+        <VBox alignment="CENTER" spacing="6" style="-fx-background-color: #501d0c; -fx-padding: 20;">
+            <Label text="🏆 MATCH COMPLETE 🏆"
+                   style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #ffffff;" />
+            <Label text="The prehistoric eras have come to an end. Here are the final scores."
+                   style="-fx-font-size: 13; -fx-text-fill: #ffffff;" />
+        </VBox>
+    </top>
+
+    <!-- Center Layout: Dual columns for Local and Global Leaderboards -->
+    <center>
+        <HBox spacing="30" alignment="CENTER" style="-fx-padding: 20;">
+
+            <!-- Left Column: Local Match Standings -->
+            <VBox spacing="10" prefWidth="480" HBox.hgrow="ALWAYS">
+                <Label text="🥇 FINAL MATCH STANDINGS"
+                       style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #d68b21;" />
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background: transparent; -fx-border-color: #dcd9d5; -fx-border-radius: 6;">
+                    <content>
+                        <VBox fx:id="localRankingBox" spacing="8" style="-fx-padding: 10;" />
+                    </content>
+                </ScrollPane>
+            </VBox>
+
+            <Separator orientation="VERTICAL" />
+
+            <!-- Right Column: Global World Leaderboard -->
+            <VBox spacing="10" prefWidth="480" HBox.hgrow="ALWAYS">
+                <Label text="🌍 GLOBAL TOP WORLD RANKINGS"
+                       style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #501d0c;" />
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background: transparent; -fx-border-color: #dcd9d5; -fx-border-radius: 6;">
+                    <content>
+                        <VBox fx:id="globalLeaderboardBox" spacing="8" style="-fx-padding: 10;" />
+                    </content>
+                </ScrollPane>
+            </VBox>
+
+        </HBox>
+    </center>
+
+    <!-- Bottom Action Bar: Navigation Buttons -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="20" style="-fx-padding: 16; -fx-background-color: #501d0c; -fx-border-color: #d5963f; -fx-border-width: 1 0 0 0;">
+            <!-- Play Again Button -->
+            <Button text="Play Again (Back to Lobby)"
+                    onAction="#onPlayAgainClicked"
+                    style="-fx-background-color: #d68b21; -fx-text-fill: white; -fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand; -fx-padding: 10 24 10 24;" />
+
+            <!-- Original Exit Button -->
+            <Button text="Close and Exit Game"
+                    onAction="#onExitClicked"
+                    style="-fx-background-color: #ec0f0f; -fx-text-fill: white; -fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand; -fx-padding: 10 24 10 24;" />
+        </HBox>
+    </bottom>
+
+</BorderPane>

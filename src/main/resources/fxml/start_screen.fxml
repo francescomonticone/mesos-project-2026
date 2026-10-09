@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-image: url('/img/start_background.png'); -fx-background-size: 100% 100%;"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="it.polimi.ingsw.Client.View.GUI.StartScreenController">
+    <children>
+
+        <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onPlayClicked" prefHeight="60.0" prefWidth="200.0"
+                        style="-fx-background-color: #501d0c; -fx-text-fill: white; -fx-font-size: 20; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand;"
+                        text="PLAY GAME" />
+
+                <Button mnemonicParsing="false" onAction="#onCreditsClicked" prefHeight="40.0" prefWidth="150.0"
+                        style="-fx-background-color: rgba(0, 0, 0, 0.6); -fx-text-fill: white; -fx-font-size: 16; -fx-font-weight: bold; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8; -fx-cursor: hand;"
+                        text="CREDITS" />
+            </children>
+        </VBox>
+
+        <Button fx:id="muteButton" layoutX="534.0" layoutY="20.0" mnemonicParsing="false" onAction="#onMuteClicked"
+                style="-fx-background-color: rgba(255,255,255,0.6); -fx-background-radius: 30; -fx-cursor: hand; -fx-font-size: 20;"
+                AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+
+    </children>
+</AnchorPane>

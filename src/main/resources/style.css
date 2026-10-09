@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Antropos";
+    src: url('/font/AntroposFreefont-BW2G.ttfAntroposFreefont-BW2G.ttf');
+}
+
+.root {
+    -fx-font-family: "Antropos";
+}

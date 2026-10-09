@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.polimi.ingsw.Client.View.GUI.EventResultController"
+      alignment="CENTER"
+      spacing="12"
+      stylesheets="@/style.css"
+      style="-fx-background-color: #d6bb95;">
+
+    <padding>
+        <Insets topRightBottomLeft="16"/>
+    </padding>
+
+    <Label text="EVENTS HAVE OCCURRED"
+           style="-fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: #501d0c;"/>
+
+    <ScrollPane fitToWidth="true"
+            style="-fx-background-color: transparent; -fx-background: transparent;">
+        <content>
+            <VBox alignment="TOP_CENTER"
+                  spacing="12"
+                  fx:id="eventBox"
+                  style="-fx-font-size: 16;">
+            </VBox>
+        </content>
+    </ScrollPane>
+
+    <Button text="Close"
+            onAction="#onCloseClicked"
+            style="-fx-background-color: #501d0c; -fx-text-fill: white;
+                   -fx-background-radius: 4; -fx-cursor: hand;"
+            maxWidth="500"/>
+
+</VBox>

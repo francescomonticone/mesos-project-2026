@@ -1,0 +1,11 @@
+package it.polimi.ingsw.Client.View.CardRegistry.ClientBuilding.ClientBuildingEffect;
+
+/**
+ * Represents the double prestige points gained during Shamanic ritual event effect.
+ */
+public record ClientDoubleShamanicPoints(String type) implements ClientBuildingEffect {
+    @Override
+    public <T> T accept(ClientEffectVisitor<T> visitor){
+        return visitor.visit(this);
+    }
+}

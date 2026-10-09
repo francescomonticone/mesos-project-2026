@@ -1,0 +1,116 @@
+[
+  {
+    "id": "EV_01",
+    "className": "HuntEvent",
+    "era": "I",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "prestigePointsBonus": 1,
+    "huntFoodBonus": 1
+  },
+  {
+    "id": "EV_02",
+    "className": "SustenanceEvent",
+    "era": "I",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "prestigePointsCost": 1,
+    "foodCost": 1
+  },
+  {
+    "id": "EV_03",
+    "className": "ShamanicRitualEvent",
+    "era": "I",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "prestigePointsGain": 5,
+    "prestigePointsLoss": 3
+  },
+  {
+    "id": "EV_04",
+    "className": "CavePaintingsEvent",
+    "era": "I",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "lossThreshold": 0,
+    "prestigePointsLost": 2,
+    "gainThreshold": 1,
+    "prestigePointsPerArtist": 1
+  },
+  {
+    "id": "EV_05",
+    "className": "HuntEvent",
+    "era": "II",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "prestigePointsBonus": 2,
+    "huntFoodBonus": 1
+  },
+  {
+    "id": "EV_06",
+    "className": "SustenanceEvent",
+    "era": "II",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "prestigePointsCost": 2,
+    "foodCost": 1
+  },
+  {
+    "id": "EV_07",
+    "className": "ShamanicRitualEvent",
+    "era": "II",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "prestigePointsGain": 10,
+    "prestigePointsLoss": 5
+  },
+  {
+    "id": "EV_08",
+    "className": "CavePaintingsEvent",
+    "era": "II",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "lossThreshold": 1,
+    "prestigePointsLost": 2,
+    "gainThreshold": 2,
+    "prestigePointsPerArtist": 2
+  },
+  {
+    "id": "EV_09",
+    "className": "HuntEvent",
+    "era": "III",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "prestigePointsBonus": 3,
+    "huntFoodBonus": 1
+  },
+  {
+    "id": "EV_10",
+    "className": "CavePaintingsEvent",
+    "era": "III",
+    "minPlayers": 0,
+    "isFinalEvent": false,
+    "lossThreshold": 2,
+    "prestigePointsLost": 2,
+    "gainThreshold": 3,
+    "prestigePointsPerArtist": 3
+  },
+  {
+    "id": "EV_11",
+    "className": "SustenanceEvent",
+    "era": "III",
+    "minPlayers": 0,
+    "isFinalEvent": true,
+    "prestigePointsCost": 3,
+    "foodCost": 1
+  },
+  {
+    "id": "EV_12",
+    "className": "ShamanicRitualEvent",
+    "era": "III",
+    "minPlayers": 0,
+    "isFinalEvent": true,
+    "prestigePointsGain": 15,
+    "prestigePointsLoss": 7
+  }
+]

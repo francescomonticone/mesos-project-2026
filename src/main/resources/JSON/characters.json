@@ -1,0 +1,617 @@
+[
+  {
+    "id": "CH_01",
+    "type": "HUNTER",
+    "era": "I",
+    "minPlayers": 2,
+    "hasFoodIcon": true,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_02",
+    "type": "HUNTER",
+    "era": "I",
+    "minPlayers": 2,
+    "hasFoodIcon": true,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_03",
+    "type": "HUNTER",
+    "era": "I",
+    "minPlayers": 2,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_04",
+    "type": "HUNTER",
+    "era": "I",
+    "minPlayers": 3,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_05",
+    "type": "HUNTER",
+    "era": "I",
+    "minPlayers": 3,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_06",
+    "type": "BUILDER",
+    "era": "I",
+    "minPlayers": 2,
+    "prestigePoints": 3,
+    "buildingDiscount": 1
+  },
+  {
+    "id": "CH_07",
+    "type": "BUILDER",
+    "era": "I",
+    "minPlayers": 2,
+    "prestigePoints": 0,
+    "buildingDiscount": 2
+  },
+  {
+    "id": "CH_08",
+    "type": "BUILDER",
+    "era": "I",
+    "minPlayers": 5,
+    "prestigePoints": 1,
+    "buildingDiscount": 2
+  },
+  {
+    "id": "CH_09",
+    "type": "BUILDER",
+    "era": "I",
+    "minPlayers": 2,
+    "prestigePoints": 2,
+    "buildingDiscount": 1
+  },
+  {
+    "id": "CH_10",
+    "type": "GATHERER",
+    "era": "I",
+    "minPlayers": 2,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_11",
+    "type": "GATHERER",
+    "era": "I",
+    "minPlayers": 2,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_12",
+    "type": "GATHERER",
+    "era": "I",
+    "minPlayers": 3,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_13",
+    "type": "GATHERER",
+    "era": "I",
+    "minPlayers": 5,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_14",
+    "type": "ARTIST",
+    "era": "I",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_15",
+    "type": "ARTIST",
+    "era": "I",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_16",
+    "type": "ARTIST",
+    "era": "I",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_17",
+    "type": "ARTIST",
+    "era": "I",
+    "minPlayers": 3,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_18",
+    "type": "ARTIST",
+    "era": "I",
+    "minPlayers": 4,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_19",
+    "type": "INVENTOR",
+    "era": "I",
+    "minPlayers": 2,
+    "invention": "LEATHER"
+  },
+  {
+    "id": "CH_20",
+    "type": "INVENTOR",
+    "era": "I",
+    "minPlayers": 2,
+    "invention": "BOAT"
+  },
+  {
+    "id": "CH_21",
+    "type": "INVENTOR",
+    "era": "I",
+    "minPlayers": 2,
+    "invention": "ARROW"
+  },
+  {
+    "id": "CH_22",
+    "type": "INVENTOR",
+    "era": "I",
+    "minPlayers": 2,
+    "invention": "BREAD"
+  },
+  {
+    "id": "CH_23",
+    "type": "INVENTOR",
+    "era": "I",
+    "minPlayers": 4,
+    "invention": "ROPE"
+  },
+  {
+    "id": "CH_24",
+    "type": "INVENTOR",
+    "era": "I",
+    "minPlayers": 4,
+    "invention": "FLUTE"
+  },
+  {
+    "id": "CH_25",
+    "type": "INVENTOR",
+    "era": "I",
+    "minPlayers": 4,
+    "invention": "BOWL"
+  },
+  {
+    "id": "CH_26",
+    "type": "SHAMAN",
+    "era": "I",
+    "minPlayers": 5,
+    "starPoint": 2
+  },
+  {
+    "id": "CH_27",
+    "type": "SHAMAN",
+    "era": "I",
+    "minPlayers": 2,
+    "starPoint": 2
+  },
+  {
+    "id": "CH_28",
+    "type": "SHAMAN",
+    "era": "I",
+    "minPlayers": 2,
+    "starPoint": 1
+  },
+  {
+    "id": "CH_29",
+    "type": "SHAMAN",
+    "era": "I",
+    "minPlayers": 4,
+    "starPoint": 1
+  },
+  {
+    "id": "CH_30",
+    "type": "HUNTER",
+    "era": "II",
+    "minPlayers": 2,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_31",
+    "type": "HUNTER",
+    "era": "II",
+    "minPlayers": 2,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_32",
+    "type": "HUNTER",
+    "era": "II",
+    "minPlayers": 3,
+    "hasFoodIcon": true,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_33",
+    "type": "HUNTER",
+    "era": "II",
+    "minPlayers": 2,
+    "hasFoodIcon": true,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_34",
+    "type": "HUNTER",
+    "era": "II",
+    "minPlayers": 4,
+    "hasFoodIcon": true,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_35",
+    "type": "HUNTER",
+    "era": "II",
+    "minPlayers": 5,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_36",
+    "type": "BUILDER",
+    "era": "II",
+    "minPlayers": 2,
+    "prestigePoints": 4,
+    "buildingDiscount": 1
+  },
+  {
+    "id": "CH_37",
+    "type": "BUILDER",
+    "era": "II",
+    "minPlayers": 2,
+    "prestigePoints": 1,
+    "buildingDiscount": 2
+  },
+  {
+    "id": "CH_38",
+    "type": "BUILDER",
+    "era": "II",
+    "minPlayers": 3,
+    "prestigePoints": 2,
+    "buildingDiscount": 1
+  },
+  {
+    "id": "CH_39",
+    "type": "BUILDER",
+    "era": "II",
+    "minPlayers": 2,
+    "prestigePoints": 3,
+    "buildingDiscount": 2
+  },
+  {
+    "id": "CH_40",
+    "type": "GATHERER",
+    "era": "II",
+    "minPlayers": 2,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_41",
+    "type": "GATHERER",
+    "era": "II",
+    "minPlayers": 3,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_42",
+    "type": "GATHERER",
+    "era": "II",
+    "minPlayers": 4,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_43",
+    "type": "GATHERER",
+    "era": "II",
+    "minPlayers": 5,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_44",
+    "type": "ARTIST",
+    "era": "II",
+    "minPlayers": 3,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_45",
+    "type": "ARTIST",
+    "era": "II",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_46",
+    "type": "ARTIST",
+    "era": "II",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_47",
+    "type": "ARTIST",
+    "era": "II",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_48",
+    "type": "INVENTOR",
+    "era": "II",
+    "minPlayers": 2,
+    "invention": "DOLL"
+  },
+  {
+    "id": "CH_49",
+    "type": "INVENTOR",
+    "era": "II",
+    "minPlayers": 4,
+    "invention": "HOOK"
+  },
+  {
+    "id": "CH_50",
+    "type": "INVENTOR",
+    "era": "II",
+    "minPlayers": 2,
+    "invention": "ROPE"
+  },
+  {
+    "id": "CH_51",
+    "type": "INVENTOR",
+    "era": "II",
+    "minPlayers": 2,
+    "invention": "FLUTE"
+  },
+  {
+    "id": "CH_52",
+    "type": "INVENTOR",
+    "era": "II",
+    "minPlayers": 2,
+    "invention": "BOWL"
+  },
+  {
+    "id": "CH_53",
+    "type": "INVENTOR",
+    "era": "II",
+    "minPlayers": 2,
+    "invention": "LEATHER"
+  },
+  {
+    "id": "CH_54",
+    "type": "SHAMAN",
+    "era": "II",
+    "minPlayers": 2,
+    "starPoint": 2
+  },
+  {
+    "id": "CH_55",
+    "type": "SHAMAN",
+    "era": "II",
+    "minPlayers": 2,
+    "starPoint": 2
+  },
+  {
+    "id": "CH_56",
+    "type": "SHAMAN",
+    "era": "II",
+    "minPlayers": 5,
+    "starPoint": 1
+  },
+  {
+    "id": "CH_57",
+    "type": "SHAMAN",
+    "era": "II",
+    "minPlayers": 5,
+    "starPoint": 2
+  },
+  {
+    "id": "CH_58",
+    "type": "HUNTER",
+    "era": "III",
+    "minPlayers": 5,
+    "hasFoodIcon": true,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_59",
+    "type": "HUNTER",
+    "era": "III",
+    "minPlayers": 2,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_60",
+    "type": "HUNTER",
+    "era": "III",
+    "minPlayers": 2,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_61",
+    "type": "HUNTER",
+    "era": "III",
+    "minPlayers": 2,
+    "hasFoodIcon": true,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_62",
+    "type": "BUILDER",
+    "era": "III",
+    "minPlayers": 2,
+    "prestigePoints": 5,
+    "buildingDiscount": 1
+  },
+  {
+    "id": "CH_63",
+    "type": "BUILDER",
+    "era": "III",
+    "minPlayers": 2,
+    "prestigePoints": 3,
+    "buildingDiscount": 2
+  },
+  {
+    "id": "CH_64",
+    "type": "BUILDER",
+    "era": "III",
+    "minPlayers": 5,
+    "prestigePoints": 4,
+    "buildingDiscount": 1
+  },
+  {
+    "id": "CH_65",
+    "type": "BUILDER",
+    "era": "III",
+    "minPlayers": 2,
+    "prestigePoints": 2,
+    "buildingDiscount": 2
+  },
+  {
+    "id": "CH_66",
+    "type": "GATHERER",
+    "era": "III",
+    "minPlayers": 5,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_67",
+    "type": "GATHERER",
+    "era": "III",
+    "minPlayers": 4,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_68",
+    "type": "GATHERER",
+    "era": "III",
+    "minPlayers": 2,
+    "foodDiscount": 3
+  },
+  {
+    "id": "CH_69",
+    "type": "ARTIST",
+    "era": "III",
+    "minPlayers": 5,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_70",
+    "type": "ARTIST",
+    "era": "III",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_71",
+    "type": "ARTIST",
+    "era": "III",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_72",
+    "type": "ARTIST",
+    "era": "III",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+    "id": "CH_73",
+    "type": "INVENTOR",
+    "era": "III",
+    "minPlayers": 4,
+    "invention": "NECKLACE"
+  },
+  {
+    "id": "CH_74",
+    "type": "INVENTOR",
+    "era": "III",
+    "minPlayers": 3,
+    "invention": "BOAT"
+  },
+  {
+    "id": "CH_75",
+    "type": "INVENTOR",
+    "era": "III",
+    "minPlayers": 3,
+    "invention": "ARROW"
+  },
+  {
+    "id": "CH_76",
+    "type": "INVENTOR",
+    "era": "III",
+    "minPlayers": 2,
+    "invention": "DOLL"
+  },
+  {
+    "id": "CH_77",
+    "type": "INVENTOR",
+    "era": "III",
+    "minPlayers": 2,
+    "invention": "HOOK"
+  },
+  {
+    "id": "CH_78",
+    "type": "INVENTOR",
+    "era": "III",
+    "minPlayers": 2,
+    "invention": "NECKLACE"
+  },
+  {
+    "id": "CH_79",
+    "type": "INVENTOR",
+    "era": "III",
+    "minPlayers": 2,
+    "invention": "BREAD"
+  },
+  {
+    "id": "CH_80",
+    "type": "SHAMAN",
+    "era": "III",
+    "minPlayers": 3,
+    "starPoint": 2
+  },
+  {
+    "id": "CH_81",
+    "type": "SHAMAN",
+    "era": "III",
+    "minPlayers": 2,
+    "starPoint": 3
+  },
+  {
+    "id": "CH_82",
+    "type": "SHAMAN",
+    "era": "III",
+    "minPlayers": 2,
+    "starPoint": 2
+  },
+  {
+    "id": "CH_83",
+    "type": "SHAMAN",
+    "era": "III",
+    "minPlayers": 2,
+    "starPoint": 3
+  },
+  {
+    "id": "CH_84",
+    "type": "SHAMAN",
+    "era": "III",
+    "minPlayers": 4,
+    "starPoint": 2
+  }
+]

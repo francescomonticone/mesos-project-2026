@@ -1,0 +1,54 @@
+[
+  {
+  "id": "CH_01",
+  "type": "HUNTER",
+  "era": "I",
+  "minPlayers": 2,
+  "hasFoodIcon": true,
+  "foodBonus": 1
+  },
+  {
+    "id": "CH_02",
+    "type": "HUNTER",
+    "era": "I",
+    "minPlayers": 2,
+    "hasFoodIcon": false,
+    "foodBonus": 1
+  },
+  {
+    "id": "CH_03",
+    "type": "BUILDER",
+    "era": "I",
+    "minPlayers": 2,
+    "prestigePoints": 3,
+    "buildingDiscount": 1
+  },
+  {
+  "id": "CH_04",
+  "type": "GATHERER",
+  "era": "I",
+  "minPlayers": 2,
+  "foodDiscount": 3
+  },
+  {
+    "id": "CH_05",
+    "type": "ARTIST",
+    "era": "I",
+    "minPlayers": 2,
+    "artistBonus": 1
+  },
+  {
+  "id": "CH_06",
+  "type": "INVENTOR",
+  "era": "I",
+  "minPlayers": 2,
+  "invention": "NECKLACE"
+  },
+  {
+    "id": "CH_07",
+    "type": "SHAMAN",
+    "era": "I",
+    "minPlayers": 4,
+    "starPoint": 1
+  }
+]

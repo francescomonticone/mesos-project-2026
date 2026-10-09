@@ -1,0 +1,234 @@
+[
+  {
+    "id": "BL_01",
+    "era": "I",
+    "minPlayers": 2,
+    "foodCost": 4,
+    "finalPrestigePoints": 3,
+    "effect": {
+      "type": "FoodPerCompleteSet",
+      "food": 5,
+      "setSize": 6
+    }
+  },
+  {
+    "id": "BL_02",
+    "era": "I",
+    "minPlayers": 2,
+    "foodCost": 4,
+    "finalPrestigePoints": 4,
+    "effect":{
+      "type": "SustenanceGatherersDiscount",
+      "food": 1
+    }
+  },
+  {
+    "id": "BL_03",
+    "era": "I",
+    "minPlayers": 2,
+    "foodCost": 5,
+    "finalPrestigePoints": 3,
+    "effect": {
+      "type": "SustenanceArtistDiscount",
+      "food": 1
+    }
+  },
+  {
+    "id": "BL_04",
+    "era": "I",
+    "minPlayers": 2,
+    "foodCost": 5,
+    "finalPrestigePoints": 2,
+    "effect": {
+      "type": "ShamanicShield"
+    }
+  },
+  {
+    "id": "BL_05",
+    "era": "I",
+    "minPlayers": 2,
+    "foodCost": 3,
+    "finalPrestigePoints": 3,
+    "effect": {
+      "type": "ExtraFoodTurnEnd",
+      "food": 1
+    }
+  },
+  {
+    "id": "BL_06",
+    "era": "I",
+    "minPlayers": 2,
+    "foodCost": 3,
+    "finalPrestigePoints": 4,
+    "effect": {
+      "type": "SameInventorPairBonus",
+      "food": 3
+    }
+  },
+  {
+    "id": "BL_07",
+    "era": "II",
+    "minPlayers": 2,
+    "foodCost": 7,
+    "finalPrestigePoints": 0,
+    "effect": {
+      "type": "DoubleShamanicPoints"
+    }
+  },
+  {
+    "id": "BL_08",
+    "era": "II",
+    "minPlayers": 2,
+    "foodCost": 6,
+    "finalPrestigePoints": 4,
+    "effect": {
+      "type": "ExtraShamanicStar",
+      "stars": 3
+    }
+  },
+  {
+    "id": "BL_09",
+    "era": "II",
+    "minPlayers": 2,
+    "foodCost": 7,
+    "finalPrestigePoints": 4,
+    "effect": {
+      "type": "SustenanceInventorsDiscount",
+      "food": 1
+    }
+  },
+  {
+    "id": "BL_10",
+    "era": "II",
+    "minPlayers": 2,
+    "foodCost": 7,
+    "finalPrestigePoints": 2,
+    "effect": {
+      "type": "HuntEventBonus",
+      "food": 1,
+      "points": 1
+    }
+  },
+  {
+    "id": "BL_11",
+    "era": "II",
+    "minPlayers": 2,
+    "foodCost": 6,
+    "finalPrestigePoints": 4,
+    "effect": {
+      "type": "DoubleBuilderPoints"
+    }
+  },
+  {
+    "id": "BL_12",
+    "era": "II",
+    "minPlayers": 2,
+    "foodCost": 5,
+    "finalPrestigePoints": 6,
+    "effect": {
+      "type": "CavePaintingBonus",
+      "foodPerArtist": 1
+    }
+  },
+  {
+    "id": "BL_13",
+    "era": "II",
+    "minPlayers": 2,
+    "foodCost": 5,
+    "finalPrestigePoints": 6,
+    "effect": {
+      "type": "PointsPerCompleteSet",
+      "points": 6,
+      "setSize": 6
+    }
+  },
+  {
+    "id": "BL_14",
+    "era": "III",
+    "minPlayers": 2,
+    "foodCost": 8,
+    "finalPrestigePoints": 8,
+    "effect": {
+      "type": "ExtraPointPerHunter",
+      "points": 3
+    }
+  },
+  {
+    "id": "BL_15",
+    "era": "III",
+    "minPlayers": 2,
+    "foodCost": 7,
+    "finalPrestigePoints": 6,
+    "effect": {
+      "type": "ExtraPointPerGatherer",
+      "points": 4
+    }
+  },
+  {
+    "id": "BL_16",
+    "era": "III",
+    "minPlayers": 2,
+    "foodCost": 7,
+    "finalPrestigePoints": 4,
+    "effect": {
+      "type": "ExtraPointPerShaman",
+      "points": 4
+    }
+  },
+  {
+    "id": "BL_17",
+    "era": "III",
+    "minPlayers": 2,
+    "foodCost": 6,
+    "finalPrestigePoints": 3,
+    "effect": {
+      "type": "ExtraPointPerBuilder",
+      "points": 4
+    }
+  },
+  {
+    "id": "BL_18",
+    "era": "III",
+    "minPlayers": 2,
+    "foodCost": 7,
+    "finalPrestigePoints": 4,
+    "effect": {
+      "type": "ExtraPointPerArtist",
+      "points": 4
+    }
+  },
+  {
+    "id": "BL_19",
+    "era": "III",
+    "minPlayers": 2,
+    "foodCost": 6,
+    "finalPrestigePoints": 6,
+    "effect": {
+      "type": "ExtraPointPerInventor",
+      "points": 2
+    }
+  },
+  {
+    "id": "BL_20",
+    "era": "III",
+    "minPlayers": 2,
+    "foodCost": 9,
+    "finalPrestigePoints": 3,
+    "effect": {
+      "type": "ExtraCardPick",
+      "extraUpCardPick": 1,
+      "extraDownCardPick": 0
+    }
+  },
+  {
+    "id": "BL_21",
+    "era": "III",
+    "minPlayers": 2,
+    "foodCost": 10,
+    "finalPrestigePoints": 0,
+    "effect": {
+      "type": "BonusPoints",
+      "points": 25
+    }
+  }
+]
