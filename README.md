@@ -7,6 +7,7 @@
 
 **Course:** Software Engineering Project A.Y. 2025-2026  
 **Project:** PSP2 - MESOS
+**Grade achieved:** 30 cum laude (30L)
 
 ## Group Members
 Francesco Monticone , Samuel Matta , Mattia Mareghello , Gabriele Maiolo
